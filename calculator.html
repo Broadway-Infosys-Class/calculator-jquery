@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="display-wrapper">
+            <input id="display" type="text" class="display" />
+        </div>
+        <div class="row">
+            <button class="my-btn number">1</button>
+            <button class="my-btn number ">2</button>
+            <button class="my-btn number ">3</button>
+            <button class="my-btn operator">/</button>
+        </div>
+        <div class="row">
+            <button class="my-btn number ">4</button>
+            <button class="my-btn number">5</button>
+            <button class="my-btn number">6</button>
+            <button class="my-btn operator">*</button>
+        </div>
+        <div class="row">
+            <button class="my-btn number">7</button>
+            <button class="my-btn number">8</button>
+            <button class="my-btn number">9</button>
+            <button class="my-btn operator">-</button>
+        </div>
+        <div class="row">
+            <button class="my-btn clear">C</button>
+            <button class="my-btn number">0</button>
+            <button class="my-btn equals">=</button>
+            <button class="my-btn operator">+</button>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="main.js"></script>
+<!-- <script>
+    var display = document.getElementById('display');
+    var operators = 0;
+    function calcInputs(a) {
+        if (a == "+" || a == "-" || a == "/" || a == "*") {
+            operators++;
+            if (operators == 1) {
+                display.value = display.value + a;
+            } else {
+                display.value = eval(display.value) + a;
+            }
+        } else {
+            display.value = display.value + a;
+        }
+    }
+
+    function inputsClear() {
+        display.value = "";
+    }
+
+    function calcEqual() {
+        display.value = eval(display.value);
+    }
+
+
+</script> -->
